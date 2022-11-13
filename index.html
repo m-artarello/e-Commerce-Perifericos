@@ -11,343 +11,268 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
+    <title>MPeripherals - E-commerce</title>
 </head>
 <body class="background">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-settings">
-        <div class="container-fluid">
-            <div class="d-flex">
-            <!-- Logo -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img class="logo-settings img-fluid" src="/img/logo.png" alt="logo">
-                </a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#"><h3>MPeripherals</h3></a>
-                    </li>
-                </ul>
+    <header id="appHeader"></header>
+
+    <main>
+        <figure>
+            <img src="img/blackfriday.png" alt="BlackFriday" class="figura-promocao">
+        </figure>
+    
+        
+        <div class="mx-5 hp-principal">
+    
+            <!-- Categorias -->
+            <div class="mx-5 d-flex text-center justify-content-center">
+                <hr class="my-4 hr hr-blurry divisor-color" />
+                <h1 class="mx-4 categorias-title">Categorias</h1>
+                <hr class="my-4 hr hr-blurry divisor-color" />
             </div>
-            <!-- Logo -->
-    
-            <!-- Input de busca de produtos -->
-            <div class="navbar-nav flex-row d-none d-md-flex width-280px ">
-                <form class="input-group my-auto d-none d-sm-flex align-items-center">
-                    <input autocomplete="off" type="search" class="form-control form-settings" id="input-busca" placeholder="Busque por um produto específico" style="min-width: 125px;"/>
-                    <button class="search-settings align-items-center text-center" id="buscar">
-                        <span class="input-group-text border-0 d-none d-lg-flex align-items-center justify-content-center">
-                            <i class="fas fa-search icon-color" id="search"></i>
-                        </span>
-                    </button>
-            </div>
+            
         
+            <section>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
+                    <div class="col mx-4 card-hp-settings">
+                        <div class="card h-100 card-hp-conteudo p-5">
+                            <div class="card-body row row-cols-md-2 p-0">
+                                <div class="col">
+                                    <a href="" class="class="card-title"><h1 class="me-5 categorias">Mouses</h1></a>
+                                    <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
+                                    <h2 class="mt-4 preco">R$ 79 -</h2>
+                                    <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
+                                </div>
         
-    
-        <!-- Login, cadastrar e carrinho -->
-            <ul class="navbar-nav flex-row">
-
-                <button type="button" class="btn btn-outline-primary btn-entrar" data-mdb-ripple-color="dark">Entrar</button>
-
-                <button type="button" class="btn btn-outline-primary btn-cadastrar" data-mdb-ripple-color="dark">Cadastre-se já!</button>
-
-
-                <li class="nav-item me-3 me-lg-1">
-                    <a class="nav-link text-center" href="#">
-                    <span class=""><i class="fas fa-shopping-bag fa-lg icon-color icon-settings align-items-center"></i></span>
-                    <span class="badge rounded-pill badge-notification bg-danger">2</span>
-                    </a>
-                </li>
-
-
-            </ul>
-        <!-- Login, cadastrar e carrinho -->
-        </div>
-    </nav>
-  <!-- Navbar -->
-
-    <figure>
-        <img src="img/blackfriday.png" alt="BlackFriday" class="figura-promocao">
-    </figure>
-
-    
-    <div class="mx-5 hp-principal">
-
-        <!-- Categorias -->
-        <div class="mx-5 d-flex text-center justify-content-center">
-            <hr class="my-4 hr hr-blurry divisor-color" />
-            <h1 class="mx-4 categorias-title">Categorias</h1>
-            <hr class="my-4 hr hr-blurry divisor-color" />
-        </div>
-        
-    
-        <section>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
-                <div class="col mx-4 card-hp-settings">
-                    <div class="card h-100 card-hp-conteudo p-5">
-                        <div class="card-body row row-cols-md-2 p-0">
-                            <div class="col">
-                                <a href="" class="class="card-title"><h1 class="me-5 categorias">Mouses</h1></a>
-                                <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
-                                <h2 class="mt-4 preco">R$ 79 -</h2>
-                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
+                                <div class="col h-100 align-items-center">
+                                    <img src="img/mouses.png" alt="" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="300" class="p-3 card-hp-img-mouse">
+                                </div>
+                                
                             </div>
-    
-                            <div class="col h-100 align-items-center">
-                                <img src="img/mouses.png" alt="" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="300" class="p-3 card-hp-img-mouse">
-                            </div>
-                            
                         </div>
                     </div>
-                </div>
-        
-                <div class="col me-4 card-hp-settings">
-                    <div class="card h-100 card-hp-conteudo p-5">
-                        <div class="card-body row row-cols-md-2 p-0">
-                            <div class="col">
-                                <a href="" class="class="card-title"><h1 class="me-5 categorias">Teclados</h1></a>
-                                <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
-                                <h2 class="mt-4 preco">R$ 160 -</23>
-                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
+            
+                    <div class="col me-4 card-hp-settings">
+                        <div class="card h-100 card-hp-conteudo p-5">
+                            <div class="card-body row row-cols-md-2 p-0">
+                                <div class="col">
+                                    <a href="" class="class="card-title"><h1 class="me-5 categorias">Teclados</h1></a>
+                                    <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
+                                    <h2 class="mt-4 preco">R$ 160 -</23>
+                                    <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
+                                </div>
+                                <div class="col h-100 align-items-center">
+                                    <img src="img/teclados.png" alt="" data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="300" class="ps-3 card-hp-img">
+                                </div>
                             </div>
-                            <div class="col h-100 align-items-center">
-                                <img src="img/teclados.png" alt="" data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="300" class="ps-3 card-hp-img">
+                        </div>
+                    </div>
+            
+                    <div class="col mx-4 card-hp-settings">
+                        <div class="card h-100 card-hp-conteudo p-5">
+                            <div class="card-body row row-cols-md-2 p-0">
+                                <div class="col">
+                                    <a href="" class="class="card-title"><h1 class="me-5 categorias">Headsets</h1></a>
+                                    <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
+                                    <h2 class="mt-4 preco">R$ 115 -</h2>
+                                    <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
+                                </div>
+                                <div class="col h-100 align-items-center">
+                                    <img src="img/headsets.png" alt="" data-aos="zoom-in-left" data-aos-delay="700" data-aos-duration="300" class="ps-3 card-hp-img-headset">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col me-4 card-hp-settings">
+                        <div class="card h-100 card-hp-conteudo p-5">
+                            <div class="card-body row row-cols-md-2 p-0">
+                                <div class="col">
+                                    <a href="" class="class="card-title"><h1 class="categorias">Mousepads</h1></a>
+                                    <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
+                                    <h2 class="mt-4 preco">R$ 29 -</h2>
+                                    <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
+                                </div>
+                                <div class="col h-100 align-items-center">
+                                    <img src="img/mousepads.png" alt="" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="300"class="ps-3 card-hp-img-mousepad">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <div class="col mx-4 card-hp-settings">
-                    <div class="card h-100 card-hp-conteudo p-5">
-                        <div class="card-body row row-cols-md-2 p-0">
-                            <div class="col">
-                                <a href="" class="class="card-title"><h1 class="me-5 categorias">Headsets</h1></a>
-                                <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
-                                <h2 class="mt-4 preco">R$ 115 -</h2>
-                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
-                            </div>
-                            <div class="col h-100 align-items-center">
-                                <img src="img/headsets.png" alt="" data-aos="zoom-in-left" data-aos-delay="700" data-aos-duration="300" class="ps-3 card-hp-img-headset">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col me-4 card-hp-settings">
-                    <div class="card h-100 card-hp-conteudo p-5">
-                        <div class="card-body row row-cols-md-2 p-0">
-                            <div class="col">
-                                <a href="" class="class="card-title"><h1 class="categorias">Mousepads</h1></a>
-                                <p class="card-text mt-4 card-hp-detalhamento"><b> A partir de</b></p>
-                                <h2 class="mt-4 preco">R$ 29 -</h2>
-                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5" data-mdb-ripple-color="dark">Verificar ofertas</button>
-                            </div>
-                            <div class="col h-100 align-items-center">
-                                <img src="img/mousepads.png" alt="" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="300"class="ps-3 card-hp-img-mousepad">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </section>
+            <!-- Categorias -->
+    
+            <!-- Produtos em destaque -->
+            <div class="m-5 d-flex text-center justify-content-center align-items-center">
+                <hr class="my-4 hr hr-blurry w-50 divisor-color" />
+                <h1 class="mx-4 flex-fill categorias-title">Produtos em destaque</h1>
+                <hr class="my-4 hr hr-blurry w-50 divisor-color" />
             </div>
-        </section>
-        <!-- Categorias -->
-
-        <!-- Produtos em destaque -->
-        <div class="m-5 d-flex text-center justify-content-center align-items-center">
-            <hr class="my-4 hr hr-blurry w-50 divisor-color" />
-            <h1 class="mx-4 flex-fill categorias-title">Produtos em destaque</h1>
-            <hr class="my-4 hr hr-blurry w-50 divisor-color" />
+            <section>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html" >
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/mouse-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+                                <h2 class="produto-title">G403 Hero</h2>
+                                <h5 class="produto-brand my-1">Logitech</h5>
+                                <h2 class="produto-price mt-4">R$ 299,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/teclado1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
+                                <h2 class="produto-title">G713</h2>
+                                <h5 class="produto-brand my-1">Logitech</h5>
+                                <h2 class="produto-price mt-4">R$ 1.199,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                            </div>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/headset1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="700" data-aos-duration="500">
+                                <h2 class="produto-title">G733 7.1</h2>
+                                <h5 class="produto-brand my-1">Logitech</h5>
+                                <h2 class="produto-price mt-4">R$ 1.099,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                            </div>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/mousepad1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
+                                <h2 class="produto-title">G840 Edição Shroud</h2>
+                                <h5 class="produto-brand my-1">Logitech</h5>
+                                <h2 class="produto-price mt-4">R$ 319,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+    
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination d-flex justify-content-center text-center mt-4">
+                        <li class="page-item">
+                            <a class="page-link pagination-settings" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link pagination-settings" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link pagination-settings" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link pagination-settings" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link pagination-settings" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- Produtos em destaque -->
+    
+            <!-- Lançamentos -->
+            <div class="m-5 d-flex text-center justify-content-center align-items-center">
+                <hr class="my-4 hr hr-blurry w-50 divisor-color" />
+                <h1 class="mx-4 flex-fill categorias-title">Lançamentos</h1>
+                <hr class="my-4 hr hr-blurry w-50 divisor-color" />
+            </div>
+            <section>
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/mouse2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+                                <h2 class="produto-title">DeathAdder</h2>
+                                <h5 class="produto-brand my-1">Razer</h5>
+                                <h2 class="produto-price mt-4">R$ 129,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                            </div>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/teclado2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
+                                
+                                <h2 class="produto-title">Ocean Star</h2>
+                                <h5 class="produto-brand my-1">Akko</h5>
+                                <h2 class="produto-price mt-4">R$ 699,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                                
+                                
+                            </div>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/headset2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="700" data-aos-duration="500">
+                                <h2 class="produto-title">Virtuoso</h2>
+                                <h5 class="produto-brand my-1">Corsair</h5>
+                                <h2 class="produto-price mt-4">R$ 899,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                            </div>
+                        </a>
+                        
+                    </div>
+    
+                    <div class="col mx-2 card-hp-produtos-settings">
+                        <a href="produto.html">
+                            <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
+                                <img src="img/teclado3-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
+                                
+                                <h2 class="produto-title">9009 Retro</h2>
+                                <h5 class="produto-brand my-1">Akko</h5>
+                                <h2 class="produto-price mt-4">R$ 699,90</h2>
+                                <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
+                                
+                                
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+    
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination d-flex justify-content-center text-center mt-4">
+                        <li class="page-item">
+                            <a class="page-link pagination-settings" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link pagination-settings" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link pagination-settings" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link pagination-settings" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link pagination-settings" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
         </div>
-        <section>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/mouse-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
-                        <h2 class="produto-title">G403 Hero</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 299,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
-                </div>
-
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/teclado1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
-                        <h2 class="produto-title">G713</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 1.199,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
-                </div>
-
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/headset1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="700" data-aos-duration="500">
-                        <h2 class="produto-title">G733 7.1</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 1.099,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
-                </div>
-
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/mousepad1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
-                        <h2 class="produto-title">G840 Edição Shroud</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 319,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <nav aria-label="Page navigation example">
-                <ul class="pagination d-flex justify-content-center text-center mt-4">
-                    <li class="page-item">
-                        <a class="page-link pagination-settings" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link pagination-settings" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link pagination-settings" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link pagination-settings" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link pagination-settings" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <!-- Produtos em destaque -->
-
-        <!-- Lançamentos -->
-        <div class="m-5 d-flex text-center justify-content-center align-items-center">
-            <hr class="my-4 hr hr-blurry w-50 divisor-color" />
-            <h1 class="mx-4 flex-fill categorias-title">Lançamentos</h1>
-            <hr class="my-4 hr hr-blurry w-50 divisor-color" />
-        </div>
-        <section>
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/mouse2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
-                        <h2 class="produto-title">DeathAdder</h2>
-                        <h5 class="produto-brand my-1">Razer</h5>
-                        <h2 class="produto-price mt-4">R$ 129,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
-                </div>
-
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/teclado2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
-                        
-                        <h2 class="produto-title">Ocean Star</h2>
-                        <h5 class="produto-brand my-1">Akko</h5>
-                        <h2 class="produto-price mt-4">R$ 699,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                        
-                        
-                    </div>
-                </div>
-
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/headset2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="700" data-aos-duration="500">
-                        <h2 class="produto-title">Virtuoso</h2>
-                        <h5 class="produto-brand my-1">Corsair</h5>
-                        <h2 class="produto-price mt-4">R$ 899,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
-                </div>
-
-                <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/teclado3-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
-                        
-                        <h2 class="produto-title">9009 Retro</h2>
-                        <h5 class="produto-brand my-1">Akko</h5>
-                        <h2 class="produto-price mt-4">R$ 699,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-
-            <nav aria-label="Page navigation example">
-                <ul class="pagination d-flex justify-content-center text-center mt-4">
-                    <li class="page-item">
-                        <a class="page-link pagination-settings" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link pagination-settings" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link pagination-settings" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link pagination-settings" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link pagination-settings" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </div>
-    <!-- Lançamentos -->
+    </main>
 
     <!-- Footer -->
-    <footer class=" text-center" style="background-color:#23232f;">
-        <div class="container p-4">
-    
-            <section class="mb-4">
-                <!-- Linkedin -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/matheus-martarello-gutstein-aa40a3206/" role="button"><i class="fab fa-linkedin-in"></i></a>
-                <!-- Github -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://github.com/m-artarello" role="button"><i class="fab fa-github"></i></a>
-            </section>
-        
-
-            <section class="">
-                <form action="">
-                <div class="row d-flex justify-content-center">
-
-                    <div class="col-auto">
-                    <p class="pt-2">
-                        <strong>Receba novas ofertas diretamente no seu e-mail</strong>
-                    </p>
-                    </div>
-
-        
-                    <div class="col-md-5 col-12">
-
-                        <div class="form-outline form-white">
-                            <input type="text" id="formWhite" class="form-control" />
-                            <label class="form-label" for="formWhite">Seu endereço de e-mail</label>
-                          </div>
-                    </div>
-
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-outline-light mb-4">
-                                Assinar
-                            </button>
-                        </div>
-                </div>
-                </form>
-            </section>
-            <section class="mb-4">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                distinctio earum repellat quaerat voluptatibus placeat nam,
-                commodi optio pariatur est quia magnam eum harum corrupti dicta,
-                aliquam sequi voluptate quas.
-                </p>
-            </section>
-        </div>
-
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <a class="text-white" href="https://github.com/m-artarello">© 2022 Copyright: Matheus Martarello</a>
-        </div>
-    </footer>
+    <footer class=" text-center" style="background-color:#23232f;" id="appFooter"></footer>
 
 
     
@@ -358,6 +283,9 @@
     <script>
       AOS.init();
     </script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/components/header.js" type="module"></script>
+    <script src="./js/components/footer.js" type="module"></script>
 
 </body>
 </html>

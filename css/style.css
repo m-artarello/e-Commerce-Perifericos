@@ -208,6 +208,12 @@ h3 {
     transition: .3s;
 }
 
+.btn-cadastrar:focus{
+    color: #abe6cd;
+    border-color: #abe6cd;
+    transition: .3s;
+}
+
 .figura-promocao{
     width: 100%;
     height: 22rem;
@@ -327,6 +333,94 @@ h3 {
 footer{
     color: #7674F9;
     font-size: 1rem;
+}
+
+
+
+/* Product page */
+
+
+.white-space-header{
+    height: 1.2rem;
+}
+
+.product-page{
+    background-color: #23232F;
+    height: 45rem;
+}
+
+.product-page-body{
+    color: #e8fff0;
+    font-size: 1.1rem;
+}
+
+.product-mimalist-images{
+    width: 6rem;
+    height: 6rem;
+}
+
+.product-title{
+    font-size: 3.5rem;
+}
+
+.images-list {
+    background-color: transparent;
+    border-color: #7674f936;
+}
+
+.price-color{
+    color: #7674F9;
+}
+
+.product-attributes{
+    background-color: transparent;
+    color: #e8fff0;
+    border-color: #7674F9;
+}
+
+.divisor-margin{
+    margin-top: 5rem;
+}
+
+.product-margin-detalhes {
+    margin: 1rem;
+}
+
+.calcular-frete{
+    height: 2.7rem;
+    width: 18rem;
+    border-color: #7674F9 !important;
+}
+
+.btn-adicionar{
+    width: 20rem;
+}
+
+.btn-calcular{
+    height: 2.7rem;
+    width: 7rem;
+}
+
+.modal-body{
+    background-color: #23232F;
+}
+
+.modal-footer{
+    background-color: #23232F;
+}
+
+.modal-header{
+    background-color: #23232F;
+}
+
+.modal-list{
+    background-color: transparent;
+    color: #e8fff0;
+    border-color: #e8fff0;
+}
+
+.modal-close{
+    color: #e8fff0;
 }
 
 

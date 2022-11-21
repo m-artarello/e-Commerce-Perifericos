@@ -30,9 +30,9 @@ export const headerComponent = () => `
     <!-- Login, cadastrar e carrinho -->
         <ul class="navbar-nav flex-row">
 
-            <button type="button" class="btn btn-outline-primary btn-entrar" data-mdb-ripple-color="dark">Entrar</button>
+            <button type="button" class="btn btn-outline-primary btn-entrar" data-mdb-ripple-color="dark" data-mdb-toggle="modal" data-mdb-target="#loginModal">Entrar</button>
 
-            <button type="button" class="btn btn-outline-primary btn-cadastrar" data-mdb-ripple-color="dark">Cadastre-se já!</button>
+            <button type="button" class="btn btn-outline-primary btn-cadastrar" data-mdb-ripple-color="dark" data-mdb-toggle="modal" data-mdb-target="#cadastroModal">Cadastre-se já!</button>
 
 
             <li class="nav-item me-3 me-lg-1">

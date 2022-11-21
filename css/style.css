@@ -423,6 +423,67 @@ footer{
     color: #e8fff0;
 }
 
+.modal-title{
+    color: #e8fff0;
+}
+
+.modal-close:hover{
+    color: #abe6cd;
+}
+
+.btn-close{
+    background: transparent !important;
+}
+
+.input-color{
+    color: #e8fff0 !important;
+}
+
+.input-color:focus{
+    border-color: #e8fff0 !important;
+
+}
+
+.nav-tabs .nav-link {
+    border: solid transparent;
+    border-width: 0 0 2px;
+    border-radius: 0;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #e8fff0;
+    padding: 17px 29px 16px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #abe6cd;
+    border-color: #abe6cd;
+    background-color: #616161;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #abe6cd;
+    border-color: #320e63;
+    color: #320e63;
+}
+
+.invalid{
+    border-color: #e77b7b !important;
+}
+
+.invalid:focus{
+    border-color: #e77b7b !important;
+}
+
+.erromsg span{
+    color: rgb(255, 147, 147);
+    font-size: .8rem;
+}
+
+
+
+
 
 
 

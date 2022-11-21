@@ -274,9 +274,32 @@
     <!-- Footer -->
     <footer class=" text-center" style="background-color:#23232f;" id="appFooter"></footer>
 
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title modal-title" id="exampleModalLabel">Login / Entrar</h5>
+                <button type="button" class="btn-close modal-close" data-mdb-dismiss="modal" aria-label="Close"><i class="fas fa-times modal-close"></i></button>
+            </div>
 
-    
-    
+            <div class="modal-body text-center">
+                <div class="form-outline mt-3 input-color">
+                    <input type="email" id="typeEmail" class="form-control input-color" />
+                    <label class="form-label input-color" for="typeEmail">E-mail</label>
+                </div>
+
+                <div class="form-outline mt-4 input-color">
+                    <input type="password" id="typePassword" class="form-control input-color" />
+                    <label class="form-label input-color" for="typePassword">Senha</label>
+                </div>
+                <div class="w-100 text-center">
+                    <button type="button" class="btn btn-outline-primary btn-cadastrar mt-4" data-mdb-ripple-color="dark">ENTRAR</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

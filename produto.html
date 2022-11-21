@@ -61,7 +61,7 @@
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title" id="exampleModalLabel">Opções de parcelamento</h5>
-                          <button type="button" class="btn-close modal-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                          <button type="button" class="btn-close modal-close" data-mdb-dismiss="modal" aria-label="Close"><i class="fas fa-times modal-close"></i></button>
                         </div>
 
                         <div class="modal-body">
@@ -98,11 +98,7 @@
                                     <div class="ms-2 me-auto">9x sem juros de R$ 25,80</div>
                                     <div class="fw-bold">Total: R$ 232,21</div>
                                 </li>
-                                
                             </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-primary btn-cadastrar btn-adicionar" data-mdb-ripple-color="dark">Fechar</button>
                         </div>
                       </div>
                     </div>
@@ -149,8 +145,8 @@
                 </li>
                 <li class="list-group-item product-attributes px-4 py-3">
                     LOGITECH G HUB – Configure seis botões programáveis para simplificar as ações no jogo. 
-                    A alternância de DPI imediata permite programar e alternar entre até cinco configurações de sensibilidade, de 100 a 25.600 DPI*. 
-                    * Requer o software Logitech G HUB, disponível em logitechG.com/GHUB.
+                    A alternância de DPI imediata permite programar e alternar entre até cinco configurações de sensibilidade, de 100 a 25.600 DPI*.
+                    Requer o software Logitech G HUB, disponível em logitechG.com/GHUB.
                 </li>
                 <li class="list-group-item product-attributes px-4 py-3">
                     Desempenho de jogo avançado – Até 8x mais rápido que mouses padrão, com uma taxa de transmissão de 1 ms, 
@@ -233,7 +229,318 @@
     
     <footer class="text-center w-100 " style="background-color:#23232f;" id="appFooter"></footer>
     
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-title" id="exampleModalLabel">Login / Entrar</h5>
+                    <button type="button" class="btn-close modal-close" data-mdb-dismiss="modal" aria-label="Close"><i class="fas fa-times modal-close"></i></button>
+                </div>
     
+                <div class="modal-body text-center">
+                    <div class="form-outline mt-3 input-color">
+                        <input type="email" id="typeEmail" class="form-control input-color" />
+                        <label class="form-label input-color" for="typeEmail">E-mail</label>
+                    </div>
+    
+                    <div class="form-outline mt-4 input-color">
+                        <input type="password" id="typePassword" class="form-control input-color" />
+                        <label class="form-label input-color" for="typePassword">Senha</label>
+                    </div>
+                    <div class="w-100 text-center">
+                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-4" data-mdb-ripple-color="dark">ENTRAR</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-title" id="exampleModalLabel">Cadastro</h5>
+                    <button type="button" class="btn-close modal-close" data-mdb-dismiss="modal" aria-label="Close"><i class="fas fa-times modal-close"></i></button>
+                </div>
+    
+                <div class="modal-body text-center">
+                    <!-- Abas -->
+                    <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ex2-tab-1" data-mdb-toggle="tab" href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1" aria-selected="true">
+                            Pessoa física
+                        </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2" aria-selected="false">
+                            Pessoa jurídica
+                        </a>
+                        </li>
+                    </ul>
+                    <!-- Abas -->
+
+                    <div class="tab-content" id="ex2-content">
+                        <!-- Pessoa física -->
+                        <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
+                            <div class="mt-4 container-fluid">
+                                <h3 class="mb-4">Informe seus dados pessoais</h3>
+                                <form action="#" id="form-cadastrar-pf" class="form">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="w-100">
+                                            <div class="form-outline input-color div-input">
+                                                <input type="text" id="pf-nome" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-nome">Nome completo *</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-50">
+                                            <div class="form-outline input-color ms-3">
+                                                <input type="number" id="pf-cpf" class="form-control input-color cpf" />
+                                                <label class="form-label input-color" for="pf-cpf">CPF</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3">
+                                                <input type="text" id="pf-nascimento" class="form-control input-color" />
+                                                <label class="form-label input-color" for="pf-nascimento">Data de nascimento</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-75">
+                                            <div class="form-outline mt-3 ms-3 input-color div-input">
+                                                <input type="email" id="pf-email" class="form-control input-color required email" />
+                                                <label class="form-label input-color" for="pf-email">E-mail *</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <div class="w-50 ">
+                                            <div class="form-outline mt-3 input-color div-input">
+                                                <input type="password" id="pf-password" class="form-control input-color required pf-password" />
+                                                <label class="form-label input-color" for="pf-password">Senha *</label>
+                                            </div>
+                                        </div>
+                                        <div class="w-50">
+                                            <div class="form-outline mt-3 input-color ms-3 div-input">
+                                                <input type="password" id="pf-rpasswrod" class="form-control input-color required pj-rpassword" />
+                                                <label class="form-label input-color" for="pf-rpassword">Confirmar senha *</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+    
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-50">
+                                            <div class="text-start jus">
+                                                Gênero:<br>
+                                                <input type="radio" id="masc" name="genero" value="MASCULINO" class="ms-3">
+                                                <label for="html" class="">Masculino</label><br>
+                                                <input type="radio" id="fem" name="genero" value="FEMININO" class="ms-3">
+                                                <label for="css" class="">Feminino</label><br>
+                                                <input type="radio" id="none" name="genero" value="NAO_INFORMADO" class="ms-3">
+                                                <label for="javascript" class="">Prefiro não informar</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-75">
+                                            <div class="form-outline input-color ms-3 h-25 div-input">
+                                                <input type="number" id="pf-tel" class="form-control input-color required tel" />
+                                                <label class="form-label input-color" for="pf-tel">Telefone *</label>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <h3 class="my-4">Informe seu endereço</h3>
+    
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-25">
+                                            <div class="form-outline input-color mt-3 div-input">
+                                                <input type="number" id="pf-cep" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-cep">CEP *</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3 ms-3 div-input">
+                                                <input type="text" id="pf-municipio" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-municipio">Município *</label>
+                                            </div>
+                                        </div>
+                                        <div class="w-25">
+                                            <div class="form-outline input-color mt-3 ms-3 div-input">
+                                                <input type="text" id="pf-uf" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-uf">UF *</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3 div-input">
+                                                <input type="text" id="pf-bairro" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-bairro">Bairro *</label>
+                                            </div>
+                                        </div>
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3 ms-3  div-input">
+                                                <input type="text" id="pf-logradouro" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-logradouro">Logradouro *</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-25">
+                                            <div class="form-outline input-color mt-3 div-input">
+                                                <input type="text" id="pf-numero" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pf-numero">Número *</label>
+                                            </div>
+                                        </div>
+                                        <div class="w-75">
+                                            <div class="form-outline input-color mt-3 ms-3 ">
+                                                <input type="text" id="pf-complemento" class="form-control input-color" />
+                                                <label class="form-label input-color" for="pf-complemento">Complemento</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="w-100 text-center">
+                                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5 mb-3" data-mdb-ripple-color="dark" id="btCadastrarPF">CADASTRAR</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Pessoa física -->
+
+                        <!-- Pessoa jurídica -->
+                        <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                            <div class="mt-4 container-fluid">
+                                <h3 class="mb-4">Informe seus dados</h3>
+                                <form action="#" method="post" id="form-cadastrar-pj" class="form">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="w-100">
+                                            <div class="form-outline input-color div-input">
+                                                <input type="text" id="pj-nome" name="pj-nome" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-nome">Nome completo *</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-50">
+                                            <div class="form-outline input-color ms-3">
+                                                <input type="number" id="pj-cnpj" name="pj-cnpj" class="form-control input-color cnpj" />
+                                                <label class="form-label input-color" for="pj-cnpj">CNPJ</label>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+
+                                        <div class="w-75">
+                                            <div class="form-outline mt-3 input-color div-input">
+                                                <input type="email" id="pj-email" class="form-control input-color required email" />
+                                                <label class="form-label input-color" for="pj-email">E-mail *</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-50">
+                                            <div class="form-outline input-color ms-3 mt-3 div-input">
+                                                <input type="number" id="pj-telefone" class="form-control input-color required tel" />
+                                                <label class="form-label input-color" for="pj-telefone">Telefone *</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between">
+                                        <div class="w-50">
+                                            <div class="form-outline mt-3 input-color div-input">
+                                                <input type="password" id="pj-senha" class="form-control input-color required password" />
+                                                <label class="form-label input-color" for="pj-senha">Senha *</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-50">
+                                            <div class="form-outline mt-3 input-color  ms-3 div-input">
+                                                <input type="password" id="pj-rsenha" class="form-control input-color required rpassword" />
+                                                <label class="form-label input-color" for="pj-rsenha">Confirmar senha *</label>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <h3 class="my-4">Informe seu endereço</h3>
+    
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-25">
+                                            <div class="form-outline input-color mt-3 div-input">
+                                                <input type="number" id="pj-cep" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-cep">CEP *</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3 ms-3 div-input">
+                                                <input type="text" id="pj-municipio" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-municipio">Município *</label>
+                                            </div>
+                                        </div>
+                                        <div class="w-25">
+                                            <div class="form-outline input-color mt-3 ms-3 div-input">
+                                                <input type="text" id="pj-uf" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-uf">UF *</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3 div-input">
+                                                <input type="text" id="pj-bairro" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-bairro">Bairro *</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-50">
+                                            <div class="form-outline input-color mt-3 ms-3  div-input">
+                                                <input type="text" id="pj-logradouro" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-logradouro">Logradouro *</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="d-flex mt-3 justify-content-between">
+                                        <div class="w-25">
+                                            <div class="form-outline input-color mt-3 div-input">
+                                                <input type="text" id="pj-numero" class="form-control input-color required" />
+                                                <label class="form-label input-color" for="pj-numero">Número *</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="w-75">
+                                            <div class="form-outline input-color mt-3 ms-3">
+                                                <input type="text" id="pj-complemento" class="form-control input-color" />
+                                                <label class="form-label input-color" for="pj-complemento">Complemento</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 text-center">
+                                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5 mb-3" data-mdb-ripple-color="dark" id="btCadastrarPJ">CADASTRAR</button>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pessoa jurídica -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -246,5 +553,12 @@
     <script src="./js/components/header.js" type="module"></script>
     <script src="./js/components/footer.js" type="module"></script>
     <script src="./js/product-images.js"></script>
+    <script src="js/jquery/jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js" type="text/javascript"></script>
+	<script src="js/jquery/validation/validar-cadastro-pj.js"></script>
+    <script src="js/jquery/validation/validar-cadastro-pf.js"></script>
+    <script src="js/jquery/cadastrarUsuarioPjLocalStorage.js"></script>
+    <script src="js/jquery/cadastrarUsuarioPfLocalStorage.js"></script>
+
 </body>
 </html>

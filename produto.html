@@ -22,20 +22,20 @@
     <div class=""><img class="white-space-header" src="img/White-space.png" alt=""></div>
 
     <div class="m-5 p-5 product-page h-100">
-        <div class="row row-cols row-cols-lg-2 m-5">
-            <div class="justify-content-center text-center">
+        <div class="row row-cols row-cols-lg-2 m-5 justify-content-between">
+            <div class="justify-content-center text-center images-wrapper pb-3">
                 <div class="bg-image hover-zoom">
                     <img src="img/mouse-produto.png" alt="" id="main-img">
                 </div>
                 <ul class="list-group list-group-horizontal justify-content-center">
-                    <a href="#" onclick="img01();"><li class="list-group-item images-list bg-image hover-zoom"><img src="img/mouse-produto.png" class="product-mimalist-images" alt=""></li></a>
-                    <a href="#" onclick="img02();"><li class="list-group-item images-list bg-image hover-zoom"><img src="img/g403-img02.png" class="product-mimalist-images" alt=""></li></a>
-                    <a href="#" onclick="img03();"><li class="list-group-item images-list bg-image hover-zoom"><img src="img/g403-img03.png" class="product-mimalist-images" alt=""></li></a>
-                    <a href="#" onclick="img04();"><li class="list-group-item images-list bg-image hover-zoom"><img src="img/g403-img04.png" class="product-mimalist-images" alt=""></li></a>
+                    <a href="#" onclick="img01();"><li class="list-group-item images-list bg-image hover-zoom p-0"><img src="img/mouse-produto.png" class="product-mimalist-images" alt=""></li></a>
+                    <a href="#" onclick="img02();"><li class="list-group-item images-list bg-image hover-zoom p-0"><img src="img/g403-img02.png" class="product-mimalist-images" alt=""></li></a>
+                    <a href="#" onclick="img03();"><li class="list-group-item images-list bg-image hover-zoom p-0"><img src="img/g403-img03.png" class="product-mimalist-images" alt=""></li></a>
+                    <a href="#" onclick="img04();"><li class="list-group-item images-list bg-image hover-zoom p-0"><img src="img/g403-img04.png" class="product-mimalist-images" alt=""></li></a>
                 </ul>
             </div>
 
-            <div>
+            <div class="details-wrapper">
                 <h1 class="product-title"><b>Logitech G403 Hero</b></h1>
                 <p class="mt-5 my-0">RGB LIGHTSYNC</p>
                 <p class="my-0">6 Botões Programáveis</p>
@@ -49,11 +49,16 @@
                     Personalize os efeitos de iluminação de aproximadamente 16,8 milhões de cores com o software Logitech G HUB e sincronize com seus equipamentos G. 
                     O G403 HERO é confortavelmente projetado para jogos com uma forma que é fácil de segurar e controlar.
                 </p>
-                <div class="mt-5 row row-cols-4 align-items-center ">
-                    <h1 class="price-color w-auto p-0"><b>R$ 299,90</b></h1>
-                    <h5 class="p-0 ms-2 w-25">à vista</h5>
-                    <p class="m-0">Ou até 6x de R$56,26</p>
-                    <button type="button" class="btn btn-outline-primary btn-cadastrar w-auto" data-mdb-ripple-color="dark"  data-mdb-toggle="modal" data-mdb-target="#parcelasModal">Ver parcelas</button>
+                <div class="mt-5 row row-cols-4 align-items-center justify-content-between">
+                    <div class="d-flex w-50 p-0">
+                        <p class="price-color w-auto p-0"><b>R$ 299,90</b></p>
+                        <p class="p-0 w-25">à vista</p>
+                    </div>
+                    <div class="w-50 text-end p-0">
+                        <p class="m-0">Ou até 6x de R$56,26</p>
+                        <button type="button" class="btn btn-outline-primary btn-cadastrar w-auto" data-mdb-ripple-color="dark"  data-mdb-toggle="modal" data-mdb-target="#parcelasModal">Ver parcelas</button>
+                    </div>
+                    
                 </div>
                 <!-- Modal das parcelas -->
                 <div class="modal fade" id="parcelasModal" tabindex="-1" aria-labelledby="parcelasModal" aria-hidden="true">
@@ -103,22 +108,26 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Modal das parcelas -->
-                
-                <div class="w-100 row row-cols-lg-2 align-items-end justify-content-between">
-                    <button type="button" class="btn btn-outline-primary btn-cadastrar mt-5 btn-adicionar" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    <div class="align-items-end">
-                        <p class="m-0 mb-1">Calcular frete</p>
-                        <div class="row row-cols-md-2  align-items-end">
-                            <div class="form-outline form-white calcular-frete w-auto">
-                                <input type="text" id="formWhite" class="form-control" />
-                                <label class="form-label" for="formWhite">CEP</label>
-                            </div>
-                            <button type="submit" class="btn btn-outline-light btn-calcular">
-                                Calcular
-                            </button>
 
-                        </div>
+                  <div class="d-flex mt-3 align-items-end calcular-frete">
+                    <div class="form-outline form-white calcular-frete w-auto align-items-center">
+                        <input type="text" id="formWhite" class="form-control calcular-frete" />
+                        <label class="form-label" for="formWhite">CEP</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light btn-calcular">
+                        Calcular
+                    </button>
+                </div>
+                  <!-- Modal das parcelas -->
+                  
+                  <div class="d-flex mt-5 align-items-end justify-content-center">
+                    <button type="button" class="btn btn-outline-primary btn-cadastrar btn-adicionar w-50" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Comprar</button>
+                  </div>
+
+
+                <div class="w-100 row align-items-end justify-content-between">
+                    <div class="d-flex justify-content-between">
+                        
                         
                     </div>
                 </div>
@@ -165,43 +174,58 @@
         <section>
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center w-100 m-0">
                 <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/mouse2-produto-removebg-preview.png" class="w-100 h-auto produto-img" alt="" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
-                        <h2 class="produto-title">DeathAdder</h2>
-                        <h5 class="produto-brand my-1">Razer</h5>
-                        <h2 class="produto-price mt-4">R$ 129,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
+                    <a href="produto.html">
+                        <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center" id="item-5">
+                            <img src="img/mouse2-produto-removebg-preview.png" class="w-100 h-auto" style="max-height: 11.5rem;" alt="" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+                            <h2 class="produto-title">DeathAdder</h2>
+                            <h5 class="produto-brand my-2">Razer</h5>
+                            <h2 class="produto-price my-2">R$ 129,90</h2>
+                            <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Comprar</button>
+                        </div>
+                    </a>
+                    
                 </div>
 
                 <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/teclado1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
-                        <h2 class="produto-title">G713</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 1.199,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
+                    <a href="produto.html">
+                        <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center" id="item-6">
+                            <img src="img/teclado2-produto-removebg-preview.png" class="w-100 h-auto " style="max-height: 11.5rem;" alt="" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
+                            
+                            <h2 class="produto-title">Ocean Star</h2>
+                            <h5 class="produto-brand my-2">Akko</h5>
+                            <h2 class="produto-price my-2">R$ 699,90</h2>
+                            <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Comprar</button>
+                            
+                            
+                        </div>
+                    </a>
+                    
                 </div>
 
                 <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/headset1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="700" data-aos-duration="500">
-                        <h2 class="produto-title">G733 7.1</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 1.099,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
+                    <a href="produto.html">
+                        <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center" id="item-7">
+                            <img src="img/headset2-produto-removebg-preview.png" class="w-100 h-auto" style="max-height: 11.5rem;" alt="" data-aos="flip-up" data-aos-delay="700" data-aos-duration="500">
+                            <h2 class="produto-title">Virtuoso</h2>
+                            <h5 class="produto-brand my-2">Corsair</h5>
+                            <h2 class="produto-price my-2">R$ 899,90</h2>
+                            <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Comprar</button>
+                        </div>
+                    </a>
+                    
                 </div>
 
                 <div class="col mx-2 card-hp-produtos-settings">
-                    <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center">
-                        <img src="img/mousepad1-produto.png" class="w-100 h-auto" alt="" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
-                        <h2 class="produto-title">G840 Edição Shroud</h2>
-                        <h5 class="produto-brand my-1">Logitech</h5>
-                        <h2 class="produto-price mt-4">R$ 319,90</h2>
-                        <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Adicionar ao carrinho</button>
-                    </div>
+                    <a href="produto.html">
+                        <div class="card h-100 card-hp-produtos-conteudo p-3 justify-content-center text-center" id="item-8">
+                            <img src="img/teclado3-produto-removebg-preview.png" class="w-100 h-auto " style="max-height: 11.5rem;" alt="" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="500">
+                            <h2 class="produto-title">9009 Retro</h2>
+                            <h5 class="produto-brand my-2">Akko</h5>
+                            <h2 class="produto-price my-2">R$ 699,90</h2>
+                            <button type="button" class="btn btn-outline-primary btn-cadastrar mt-3" data-mdb-ripple-color="dark"><i class="fas fa-plus-circle me-2"></i>Comprar</button>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
 
@@ -340,16 +364,16 @@
                                             <div class="text-start jus">
                                                 Gênero:<br>
                                                 <input type="radio" id="masc" name="genero" value="MASCULINO" class="ms-3">
-                                                <label for="html" class="">Masculino</label><br>
+                                                <label for="masc" class="">Masculino</label><br>
                                                 <input type="radio" id="fem" name="genero" value="FEMININO" class="ms-3">
-                                                <label for="css" class="">Feminino</label><br>
+                                                <label for="fem" class="">Feminino</label><br>
                                                 <input type="radio" id="none" name="genero" value="NAO_INFORMADO" class="ms-3">
-                                                <label for="javascript" class="">Prefiro não informar</label>
+                                                <label for="none" class="">Prefiro não informar</label>
                                             </div>
                                         </div>
                                         
                                         <div class="w-75">
-                                            <div class="form-outline input-color ms-3 h-25 div-input">
+                                            <div class="form-outline input-color ms-3 div-input">
                                                 <input type="number" id="pf-tel" class="form-control input-color required tel" />
                                                 <label class="form-label input-color" for="pf-tel">Telefone *</label>
                                             </div>
@@ -562,3 +586,9 @@
 
 </body>
 </html>
+
+
+
+            
+                
+    

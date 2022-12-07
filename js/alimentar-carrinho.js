@@ -16,7 +16,7 @@ const itemComponent = (id) => `
                       </div>
                     </form>
                   </div>
-                  <a href=""><i class="fas fa-trash-alt produtos-carrinho"></i></a>
+                  <a href="" ><i class="fas fa-trash-alt produtos-carrinho btn-excluir"></i></a>
                 </li>
 `
 const carrinhoComponent = () => `
@@ -31,8 +31,6 @@ const carrinhoComponent = () => `
               </ul>
             </div>
 
-
-            
             <div class="col-4 justify-content-center text-center ms-3">
               <h5 class="my-3">Resumo</h5> 
               <div class="modal-list align-items-center h-75 w-100 p-4">
@@ -82,7 +80,6 @@ const carrinhoComponent = () => `
 var carrinho = 0;
 var badgeCarrinho = 0;
 
-
 window.onload = function () {
     validarCarrinhoVazio()
 }
@@ -115,7 +112,7 @@ function adicionarItensCarrinho(listaItensElement){
 
     console.log(produtos);
 
-    let itemId = 0
+    let itemId = 0;
 
     if (produtos != null || produtos != undefined){
       produtos.forEach(produto => {
@@ -138,6 +135,20 @@ function adicionarItensCarrinho(listaItensElement){
       })
     }
 }
+
+// function excluirItem (element){
+//     element.preventDefault();
+//     element.parentElement().remove();
+
+//     // let botoes = document.querySelectorAll('.btn-excluir');
+
+//     // botoes.addEventListener('click', function (e) {
+//     //   e.preventDefault();
+//     //   botoes.;
+//     // });
+
+// }onclick="excluirItem(this)"
+
 
 function getProdutos (){
     let produtos = [];

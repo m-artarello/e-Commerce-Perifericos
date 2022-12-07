@@ -9,11 +9,10 @@ function gravarCarrinhoSessionStorage(){
     sessionStorage.setItem("produtos", JSON.stringify(cart));
 }
 
-
 function adicionarItemCarrinho(produtoId){
     if (sessionStorage.hasOwnProperty("produtos")) {
         cart = JSON.parse(sessionStorage.getItem("produtos"))
-      }
+    }
 
     let produto = getDadosDoProduto(produtoId);
     if (produto != null || produto != undefined){
